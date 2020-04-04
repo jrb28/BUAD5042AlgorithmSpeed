@@ -45,11 +45,13 @@ for i in range(num_labels):
     ref.append(data)
 
 
-''' This variable, num_imgs, can be changed '''
-num_imgs = 10   # number of images to check
-
 ''' Set start time variable '''
 start_time = time.time()
+
+''' =================  YOU MAY CHANGE CODE BELOW THIS LINE =========================== '''
+
+''' This variable, num_imgs, can be changed '''
+num_imgs = 10   # number of images to check
 
 ''' This block of code computes the sum of squared differences between a MNIST image and 
     each reference image '''    
@@ -82,6 +84,8 @@ for i in range(len(imgs_dist)):
     ''' or, use this elif to append image labels to the imgs_mislabeled list under specified conditions '''
     #elif abs(score_min[np.argmin(score_min)] - score_min[train_labels[i]]) > 10.0:
     #    imgs_mislabeled.append(i)
+    
+'''  =================  YOU MAY CHANGE CODE ABOVE THIS LINE =========================== '''
     
 ''' compute execution time '''
 print('Execution time:', time.time() - start_time)

@@ -89,7 +89,7 @@ for i in range(len(imgs_dist)):
     
 ''' compute execution time '''
 print('Execution time:', time.time() - start_time)
-print(str(num_imgs) + ' analyzed.  ' + str(num_correct) + ' images correctly classified.  ' + str(num_imgs - num_correct) + ' images possibly mislabeled.\n\n')
+print(str(num_imgs) + ' images analyzed.  ' + str(num_correct) + ' images labeled consistently with SSD.  ' + str(num_imgs - num_correct) + ' images possibly mislabeled.\n\n')
 
 ''' Code to view potentially mislabeled images whose indices are in the imgs_mislabeled list '''
 for i in imgs_mislabeled:
